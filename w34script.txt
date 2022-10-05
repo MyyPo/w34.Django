@@ -1,0 +1,15 @@
+A LIST OF BUILT-IN "OPTIONS" COMMANDS
+
+
+
+ADD slug quantity = adds a spececified amount of items to the inventory
+    EXAMPLE: {"ADD": {"spoon": 2, "fork": 3}}
+
+NEXT sceneid = proceeds the save to the specified scene
+    EXAMPLE: {"NEXT": 1}
+
+TAG slug = limit the access of this option to the saves with the specified tag
+    EXAMPLE: {"TAG": "ate_a_buscuit"}
+
+
+[{"ADD": {"Fork": 3}, "PROMPT": "Always"}, {"ADD": {"Spoon": 3, "Fork": 1}, "TAG": "confirmed", "PROMPT": "Seen only with tag"}]
